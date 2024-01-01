@@ -1,0 +1,14 @@
+@mixin primaryButton ($fontColor, $bgColor){
+    background-color: $bgColor;
+    color: $fontColor;
+    border: none;
+    border-radius: 16px;
+    padding: 16px 32px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: darken($bgColor, 15%);
+    }
+}
