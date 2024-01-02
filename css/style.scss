@@ -41,7 +41,6 @@ body {
             justify-content: space-around;
             li {
                 list-style: none;
-
                 font-size: 1.2rem;
             }
         }
@@ -66,10 +65,10 @@ body {
             display: flex;
             justify-content: center;
             #btn-entrar {
-                @include primaryButton(#FFFFFF, #4194F4);
+                @include primaryButton(#FFFFFF, #4194F4, 16px 32px);
             }
             #btn-registrar {
-                @include primaryButton(#FFFFFF, #2A2936);
+                @include primaryButton(#FFFFFF, #2A2936, 16px 32px);
                 margin-left: 16px;
             }
         }

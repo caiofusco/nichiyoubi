@@ -1,9 +1,9 @@
-@mixin primaryButton ($fontColor, $bgColor){
+@mixin primaryButton ($fontColor, $bgColor, $padding){
     background-color: $bgColor;
     color: $fontColor;
     border: none;
     border-radius: 16px;
-    padding: 16px 32px;
+    padding: $padding;
     font-weight: 500;
     font-size: 0.9rem;
     cursor: pointer;
