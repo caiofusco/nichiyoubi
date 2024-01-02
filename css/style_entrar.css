@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #1A171E;
+  color: #F5F5F5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.input input {
+  width: 350px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #F5F5F5;
+  padding: 8px;
+  margin-bottom: 8px;
+}/*# sourceMappingURL=style_entrar.css.map */
