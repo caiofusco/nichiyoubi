@@ -7,12 +7,84 @@
   color: #F5F5F5;
 }
 
+nav {
+  display: flex;
+  margin-top: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100vw;
+}
+nav div {
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+nav div p {
+  margin-left: 8px;
+}
+nav ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li {
+  padding-left: 36px;
+  list-style: none;
+  font-size: 1.2rem;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav .container-buttons-login-register {
+  align-items: center;
+  margin-right: 194px;
+}
+nav .container-buttons-login-register #btn-entrar {
+  background-color: #2A2936;
+  color: #F5F5F5;
+  border: none;
+  border-radius: 16px;
+  padding: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding-inline: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+nav .container-buttons-login-register #btn-entrar:hover {
+  background-color: #08080b;
+}
+nav .container-buttons-login-register #btn-cadastrar {
+  background-color: #4194F4;
+  color: #F5F5F5;
+  border: none;
+  border-radius: 16px;
+  padding: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding-inline: 8px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 8px;
+}
+nav .container-buttons-login-register #btn-cadastrar:hover {
+  background-color: #0d6ddc;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  margin-top: 64px;
 }
 .container form {
   display: flex;
@@ -25,7 +97,7 @@
 .container form h1 {
   display: flex;
   justify-content: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   margin-bottom: 16px;
 }
@@ -35,7 +107,7 @@
   border: 1px solid #F5F5F5;
   border-radius: 8px;
   padding: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   font-size: 1.1rem;
   font-weight: 500;
   color: #F5F5F5;
@@ -61,15 +133,27 @@
 .container form button:hover {
   background-color: #cfcfcf;
 }
-.container .cadastro {
-  margin-top: 16px;
-  font-size: 1.1rem;
-  font-weight: 500;
+.container form .text-recuperar-senha {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  font-size: 0.9rem;
+  font-weight: 400;
   color: #F5F5F5;
 }
-.container .cadastro a {
+.container form .text-recuperar-senha a {
+  text-decoration: none;
+}
+.container form .text-cadastro {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #F5F5F5;
+}
+.container form .text-cadastro a {
   color: #2bdbe7;
   text-decoration: none;
-  margin-left: 8px;
   text-decoration: underline;
 }/*# sourceMappingURL=style_entrar.css.map */
