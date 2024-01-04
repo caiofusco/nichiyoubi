@@ -62,7 +62,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.left .container-primary-content .container-buttons #btn-entrar {
+.left .container-primary-content .container-buttons a #btn-entrar {
   background-color: #4194F4;
   color: #FFFFFF;
   border: none;
@@ -73,10 +73,10 @@ body {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.left .container-primary-content .container-buttons #btn-entrar:hover {
+.left .container-primary-content .container-buttons a #btn-entrar:hover {
   background-color: #0d6ddc;
 }
-.left .container-primary-content .container-buttons #btn-registrar {
+.left .container-primary-content .container-buttons a #btn-registrar {
   background-color: #2A2936;
   color: #FFFFFF;
   border: none;
@@ -88,7 +88,7 @@ body {
   transition: all 0.3s ease-in-out;
   margin-left: 16px;
 }
-.left .container-primary-content .container-buttons #btn-registrar:hover {
+.left .container-primary-content .container-buttons a #btn-registrar:hover {
   background-color: #08080b;
 }
 

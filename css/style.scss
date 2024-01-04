@@ -63,12 +63,15 @@ body {
             margin-top: 32px;
             display: flex;
             justify-content: center;
-            #btn-entrar {
-                @include primaryButton(#FFFFFF, $bgBlueColor, 16px 32px);
-            }
-            #btn-registrar {
-                @include primaryButton(#FFFFFF, $bgGrayColor, 16px 32px);
-                margin-left: 16px;
+            
+            a {
+                #btn-entrar {
+                    @include primaryButton(#FFFFFF, $bgBlueColor, 16px 32px);
+                }
+                #btn-registrar {
+                    @include primaryButton(#FFFFFF, $bgGrayColor, 16px 32px);
+                    margin-left: 16px;
+                }
             }
         }
     }

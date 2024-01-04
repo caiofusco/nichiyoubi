@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrar</title>
+    <title>Cadastrar</title>
      <!--CSS-->
-     <link rel="stylesheet" href="../css/style_entrar.css">
+     <link rel="stylesheet" href="../css/style_cadastrar.css">
 
      <!--FONTES-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,15 +38,14 @@
     <div class="container">
         <div class="form">
             <form action="#" method="">
-                <h1>Entrar</h1>
+                <h1>Cadastro</h1>
+                <input type="text" name="user" placeholder="Nome de usuário">
                 <input type="email" name="email" placeholder="Email">
                 <input type="password" name="password" placeholder="Senha">
-                <button type="submit">Entrar</button>
-                <div class="text-recuperar-senha">
-                    <p><a href="#">Esqueci minha senha</a></p>
-                </div>
-                <div class="text-cadastro">
-                    <p>Não tem uma conta? <a href="cadastrar.html">Cadastre-se</a></p>
+                <input type="password" name="confirm-password" placeholder="Confirmar senha">
+                <button type="submit">Cadastrar</button>
+                <div class="text-entrar">
+                    <p>Já tenho uma conta. <a href="entrar.html">Entrar</a></p>
                 </div>
             </form>
         </div>
