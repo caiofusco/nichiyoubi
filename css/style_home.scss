@@ -1,0 +1,59 @@
+@import './variables';
+@import './buttons';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: $bgPrimaryColor;
+    color: $fontPrimaryColor;
+}
+
+nav {
+    display: flex;
+    margin-top: 32px;
+    padding-left: 91px;
+    padding-right: 16px;
+    width: 100vw;
+    div {
+        display: flex;
+        align-items: center;
+        font-size: 1.7rem;
+        font-weight: 600;
+        p{
+            margin-left: 8px;
+        }
+    }
+    ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        li {
+            padding-left: 36px;
+            list-style: none;
+            font-size: 1.2rem;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    .nav-container-right {
+        align-items: center;
+        margin-right: 194px;
+        .search {
+            button {
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
