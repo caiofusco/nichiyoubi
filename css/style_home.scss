@@ -11,6 +11,7 @@
 body {
     background-color: $bgPrimaryColor;
     color: $fontPrimaryColor;
+    overflow-x: hidden;
 }
 
 .banner {
@@ -170,6 +171,64 @@ body {
         &:hover {
             background-color: #F5F5F5;
             color: #2A2936;
+        }
+    }
+}
+
+.bar-with-logo {
+    background-color: black;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin-left: 8px;
+    }
+}
+
+.manga-section {
+    margin-top: 20px;
+    width: 100vw;
+    #title-manga-section {
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin-left: 60px;
+    }
+    hr {
+        margin-inline: 50px;
+    }
+    .card-group-manga-section {
+        display: flex;
+        margin-left: 60px;
+        margin-right: 60px;
+        justify-content: space-between;
+        .cards-manga {
+            margin-top: 8px;
+            height: 300px;
+            width: 175px;
+            a {
+                text-decoration: none;
+                color: $fontPrimaryColor;
+            }
+            img {
+                width: 100%;
+                height: 240px;
+                border-radius: 8px;
+            }
+            p {
+                display: flex;
+                justify-content: center;
+                font-size: 1rem;
+                font-weight: 500;
+                margin-top: 4px;
+            }
+            &:hover {
+                transform: scale(1.2);
+                transition: 0.5s;
+            }
         }
     }
 }
