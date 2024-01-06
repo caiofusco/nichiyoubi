@@ -3,52 +3,168 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+body {
   background-color: #1A171E;
   color: #F5F5F5;
 }
 
-nav {
+.banner {
+  width: 100vw;
+  height: 500px;
+  position: relative;
+  background: url("../img/image3.png") no-repeat;
+  background-size: 100%;
+  background-position: top;
+  overflow: hidden;
+}
+.banner nav {
+  position: absolute;
   display: flex;
+  z-index: 1;
   margin-top: 32px;
   padding-left: 91px;
   padding-right: 16px;
   width: 100vw;
 }
-nav div {
+.banner nav div {
   display: flex;
   align-items: center;
   font-size: 1.7rem;
   font-weight: 600;
 }
-nav div p {
+.banner nav div p {
   margin-left: 8px;
 }
-nav ul {
+.banner nav ul {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
-nav ul li {
+.banner nav ul li {
   padding-left: 36px;
   list-style: none;
   font-size: 1.2rem;
 }
-nav ul li a {
+.banner nav ul li a {
   text-decoration: none;
+  color: #F5F5F5;
 }
-nav .nav-container-right {
+.banner nav .nav-container-right {
   align-items: center;
   margin-right: 194px;
 }
-nav .nav-container-right .search button {
+.banner nav .nav-container-right .search button, .banner nav .nav-container-right .settings button {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
-nav .nav-container-right .search img {
-  width: 30px;
-  height: 30px;
+.banner nav .nav-container-right .search button img, .banner nav .nav-container-right .settings button img {
+  width: 25px;
+  height: 25px;
+}
+.banner nav .nav-container-right .profile {
+  margin-inline: 16px;
+}
+.banner nav .nav-container-right .profile button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.banner nav .nav-container-right .profile button img {
+  width: 40px;
+  height: 40px;
+  border-radius: 32px;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent, rgba(0, 0, 0, 0.7));
+}
+
+.banner-info {
+  z-index: 1;
+  position: absolute;
+  width: 50vw;
+  top: 100px;
+  left: 50px;
+}
+.banner-info #text-topic {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.banner-info #text-title {
+  margin-top: 16px;
+  font-size: 2.2rem;
+}
+.banner-info #text-description {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.banner-container-manga {
+  z-index: 1;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 215px;
+  height: 366px;
+}
+.banner-container-manga .banner-container-manga-img {
+  width: 215px;
+  height: 310px;
+}
+.banner-container-manga .banner-container-manga-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.banner-container-manga .tags {
+  margin-top: 6px;
+  width: 100%;
+}
+.banner-container-manga .tags button {
+  font-size: 0.8rem;
+  color: #F5F5F5;
+  background-color: #2A2936;
+  border-radius: 6px;
+  padding: 2px 6px;
+  border: none;
+}
+.banner-container-manga .tags button:hover {
+  background-color: #F5F5F5;
+  color: #2A2936;
+}
+
+.banner-buttons-group {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  bottom: 25px;
+  width: 100vw;
+  justify-content: center;
+}
+.banner-buttons-group button {
+  margin-inline: 4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 32px;
+  border: none;
+  background-color: #2A2936;
+  cursor: pointer;
+}
+.banner-buttons-group button:hover {
+  background-color: #F5F5F5;
+  color: #2A2936;
 }/*# sourceMappingURL=style_home.css.map */
