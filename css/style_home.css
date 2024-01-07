@@ -184,22 +184,22 @@ body {
   margin-left: 8px;
 }
 
-.manga-section {
-  margin-top: 20px;
-  width: 100vw;
-}
-.manga-section #title-manga-section {
+.title-manga-section {
   font-size: 1.7rem;
   font-weight: 500;
   margin-left: 60px;
+}
+
+.manga-section {
+  margin-top: 20px;
+  width: 100vw;
 }
 .manga-section hr {
   margin-inline: 50px;
 }
 .manga-section .card-group-manga-section {
   display: flex;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-inline: 60px;
   justify-content: space-between;
 }
 .manga-section .card-group-manga-section .cards-manga {
@@ -237,4 +237,74 @@ body {
   font-size: 1.1rem;
   text-align: center;
   padding: 8px;
+}
+
+.manga-section-news-updates {
+  width: 100vw;
+  margin-top: 40px;
+}
+.manga-section-news-updates hr {
+  margin-inline: 50px;
+}
+.manga-section-news-updates .container-news-updates {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 60px;
+}
+.manga-section-news-updates .container-news-updates .cards-news-updates {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 410px;
+  height: 170px;
+  background-color: #2A2936;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+.manga-section-news-updates .container-news-updates .cards-news-updates a {
+  max-height: 140px;
+}
+.manga-section-news-updates .container-news-updates .cards-news-updates img {
+  border-radius: 4px;
+  width: 100px;
+  height: 140px;
+}
+.manga-section-news-updates .container-news-updates .cards-news-updates .container-content-new-updates {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.manga-section-news-updates .container-news-updates .cards-news-updates .container-content-new-updates .cards-news-updates-manga-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.manga-section-news-updates .container-news-updates .cards-news-updates .container-content-new-updates .cards-news-updates-manga-title a {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+.manga-section-news-updates .container-news-updates .cards-news-updates .container-content-new-updates a {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+.manga-section-news-updates .container-news-updates .cards-news-updates .container-content-new-updates a button {
+  background-color: transparent;
+  border: solid 1px white;
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  padding: 2px 4px;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 220px;
+}
+.manga-section-news-updates .container-news-updates .cards-news-updates .container-content-new-updates a button:hover {
+  background-color: white;
+  color: #2A2936;
 }/*# sourceMappingURL=style_home.css.map */

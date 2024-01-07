@@ -189,21 +189,21 @@ body {
     }
 }
 
+.title-manga-section {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-left: 60px;
+}
+
 .manga-section {
     margin-top: 20px;
     width: 100vw;
-    #title-manga-section {
-        font-size: 1.7rem;
-        font-weight: 500;
-        margin-left: 60px;
-    }
     hr {
         margin-inline: 50px;
     }
     .card-group-manga-section {
         display: flex;
-        margin-left: 60px;
-        margin-right: 60px;
+        margin-inline: 60px;
         justify-content: space-between;
         .cards-manga {
             margin-top: 15px;
@@ -241,5 +241,75 @@ body {
         font-size: 1.1rem;
         text-align: center;
         padding: 8px;
+    }
+}
+
+.manga-section-news-updates {
+    width: 100vw;
+    margin-top: 40px;
+    hr {
+        margin-inline: 50px;
+    }
+    .container-news-updates {
+        display: flex;
+        justify-content: space-between;
+        margin-inline: 60px;
+        .cards-news-updates {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 410px;
+            height: 170px;
+            background-color: #2A2936;
+            border-radius: 4px;
+            margin-top: 15px;
+            a {
+                max-height: 140px;
+            }
+            img {
+                border-radius: 4px;
+                width: 100px;
+                height: 140px;
+            }
+            .container-content-new-updates {
+                margin-left: 8px;
+                display: flex;
+                flex-direction: column;
+                .cards-news-updates-manga-title {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    margin-bottom: 4px;
+                    max-width: 220px;    
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    a {
+                        text-decoration: none;
+                        color: $fontPrimaryColor;
+                    }   
+                }
+                a{
+                    text-decoration: none;
+                    color: $fontPrimaryColor;
+                    button {
+                        background-color: transparent;
+                        border: solid 1px white;
+                        cursor: pointer;
+                        border-radius: 8px;
+                        color: white;
+                        padding: 2px 4px;
+                        margin-top: 4px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 220px;
+                        &:hover {
+                            background-color: white;
+                            color: #2A2936;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
