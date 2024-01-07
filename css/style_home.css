@@ -103,15 +103,18 @@ body {
 .banner-info #text-topic {
   font-size: 2rem;
   font-weight: 500;
+  text-shadow: 5px 5px 14px black;
 }
 .banner-info #text-title {
   margin-top: 16px;
   font-size: 2.2rem;
+  text-shadow: 5px 5px 14px black;
 }
 .banner-info #text-description {
   margin-top: 8px;
   font-size: 0.9rem;
   font-weight: 300;
+  text-shadow: 5px 5px 14px black;
 }
 
 .banner-container-manga {
@@ -188,6 +191,7 @@ body {
   font-size: 1.7rem;
   font-weight: 500;
   margin-left: 60px;
+  text-shadow: 5px 5px 14px black;
 }
 
 .manga-section {
@@ -307,4 +311,45 @@ body {
 .manga-section-news-updates .container-news-updates .cards-news-updates .container-content-new-updates a button:hover {
   background-color: white;
   color: #2A2936;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #2A2936;
+  color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+footer .footer-main-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+footer .footer-main-logo p {
+  margin-left: 8px;
+}
+footer .footer-main-text {
+  font-size: 0.7rem;
+  width: 50%;
+  text-align: center;
+}
+footer .footer-links {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+footer .footer-links a {
+  text-decoration: none;
+  color: #D9D9D9;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 1rem;
+  margin-top: 8px;
 }/*# sourceMappingURL=style_home.css.map */
