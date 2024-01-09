@@ -14,6 +14,10 @@ body {
     overflow-x: hidden;
 }
 
+.nav-medium-small-screen {
+    
+}
+
 .banner {
     width: 100vw;
     height: 500px;
@@ -23,29 +27,28 @@ body {
     background-position: top;
     overflow: hidden;
     nav {
+        margin-top: 32px;
         position: absolute;
         display: flex;
         z-index: 1;
-        margin-top: 32px;
-        padding-left: 91px;
-        padding-right: 16px;
-        width: 100vw;
-        div {
+        width: 95vw;
+        margin-inline: 2.5vw;
+        align-items: center;
+        .main-logo {
             display: flex;
             align-items: center;
-            font-size: 1.7rem;
-            font-weight: 600;
-            p{
+            p {
                 margin-left: 8px;
+                font-size: 1.7rem;
+                font-weight: 600;
             }
         }
         ul {
             display: flex;
-            width: 100%;
             align-items: center;
-            justify-content: center;
+            width: 80%;
+            justify-content: space-around;
             li {
-                padding-left: 36px;
                 list-style: none;
                 font-size: 1.2rem;
                 a {
@@ -55,8 +58,10 @@ body {
             }
         }
         .nav-container-right {
+            width: 20%;
+            display: flex;
             align-items: center;
-            margin-right: 194px;
+            justify-content: space-around;
             .search, .settings {
                 button {
                     border: none;
@@ -283,7 +288,7 @@ body {
                     font-size: 1rem;
                     font-weight: 500;
                     margin-bottom: 4px;
-                    max-width: 220px;    
+                    max-width: 220px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -292,7 +297,7 @@ body {
                         color: $fontPrimaryColor;
                     }   
                 }
-                a{
+                a {
                     text-decoration: none;
                     color: $fontPrimaryColor;
                     button {
@@ -320,4 +325,81 @@ body {
 
 footer {
    @include mainFooter();
+}
+
+/*
+    MEDIA QUERIES
+*/
+
+@media (max-width: 1024px) {
+    .card-group-manga-section {
+        .card-01, .card-02 {
+            display: none;
+        }
+    }
+    .manga-section-news-updates {
+        .container-news-updates {
+            .cards-news-updates {
+                width: 100%;
+                height: 300px;
+                a {
+                    max-height: 270px;
+                }
+                img {
+                    width: 160px;
+                    height: 240px;
+                }
+                .container-content-new-updates {
+                    .cards-news-updates-manga-title {
+                        font-size: 1.5rem;
+                    }
+                    a {
+                        button {
+                            height: 60px;
+                            width: 380px;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+            .card-01, .card-02{
+                display: none;
+            }
+        }
+    }
+    footer {
+        .footer-links {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 840px) {
+
+    .nav-medium-small-screen {
+
+    }
+
+    .card-group-manga-section {
+        .card-01, .card-02, .card-03 {
+            display: none;
+        }
+        .cards-manga {
+            height: 425px !important;
+            width: 220px !important;
+            img {
+                height: 320px !important;
+            }
+            p {
+                font-size: 1.1rem !important;
+            }
+        }
+    }
+    .banner {
+        display: none;
+    }
+
+    .bar-with-logo {
+        display: none;
+    }
 }

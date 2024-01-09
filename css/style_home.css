@@ -21,31 +21,30 @@ body {
   overflow: hidden;
 }
 .banner nav {
+  margin-top: 32px;
   position: absolute;
   display: flex;
   z-index: 1;
-  margin-top: 32px;
-  padding-left: 91px;
-  padding-right: 16px;
-  width: 100vw;
+  width: 95vw;
+  margin-inline: 2.5vw;
+  align-items: center;
 }
-.banner nav div {
+.banner nav .main-logo {
   display: flex;
   align-items: center;
+}
+.banner nav .main-logo p {
+  margin-left: 8px;
   font-size: 1.7rem;
   font-weight: 600;
 }
-.banner nav div p {
-  margin-left: 8px;
-}
 .banner nav ul {
   display: flex;
-  width: 100%;
   align-items: center;
-  justify-content: center;
+  width: 80%;
+  justify-content: space-around;
 }
 .banner nav ul li {
-  padding-left: 36px;
   list-style: none;
   font-size: 1.2rem;
 }
@@ -54,8 +53,10 @@ body {
   color: #F5F5F5;
 }
 .banner nav .nav-container-right {
+  width: 20%;
+  display: flex;
   align-items: center;
-  margin-right: 194px;
+  justify-content: space-around;
 }
 .banner nav .nav-container-right .search button, .banner nav .nav-container-right .settings button {
   border: none;
@@ -352,4 +353,59 @@ footer .footer-links a {
   text-decoration: underline;
   font-size: 1rem;
   margin-top: 8px;
+}
+
+/*
+    MEDIA QUERIES
+*/
+@media (max-width: 1024px) {
+  .card-group-manga-section .card-01, .card-group-manga-section .card-02 {
+    display: none;
+  }
+  .manga-section-news-updates .container-news-updates .cards-news-updates {
+    width: 100%;
+    height: 300px;
+  }
+  .manga-section-news-updates .container-news-updates .cards-news-updates a {
+    max-height: 270px;
+  }
+  .manga-section-news-updates .container-news-updates .cards-news-updates img {
+    width: 160px;
+    height: 240px;
+  }
+  .manga-section-news-updates .container-news-updates .cards-news-updates .container-content-new-updates .cards-news-updates-manga-title {
+    font-size: 1.5rem;
+  }
+  .manga-section-news-updates .container-news-updates .cards-news-updates .container-content-new-updates a button {
+    height: 60px;
+    width: 380px;
+    font-size: 1.4rem;
+  }
+  .manga-section-news-updates .container-news-updates .card-01, .manga-section-news-updates .container-news-updates .card-02 {
+    display: none;
+  }
+  footer .footer-links {
+    width: 50%;
+  }
+}
+@media (max-width: 840px) {
+  .card-group-manga-section .card-01, .card-group-manga-section .card-02, .card-group-manga-section .card-03 {
+    display: none;
+  }
+  .card-group-manga-section .cards-manga {
+    height: 425px !important;
+    width: 220px !important;
+  }
+  .card-group-manga-section .cards-manga img {
+    height: 320px !important;
+  }
+  .card-group-manga-section .cards-manga p {
+    font-size: 1.1rem !important;
+  }
+  .banner {
+    display: none;
+  }
+  .bar-with-logo {
+    display: none;
+  }
 }/*# sourceMappingURL=style_home.css.map */
