@@ -15,6 +15,7 @@ body {
 }
 
 .banner-medium-small-screen {
+    display: none;
     width: 100vw;
     height: 560px;
     position: relative;
@@ -306,31 +307,38 @@ body {
 
 .manga-section {
     margin-top: 20px;
-    width: 100vw;
     hr {
-        margin-inline: 50px;
+        width: 93vw;
+        margin: 0 auto;
     }
     .card-group-manga-section {
         display: flex;
-        margin-inline: 60px;
-        justify-content: space-between;
-        .cards-manga {
-            margin-top: 15px;
-            height: 345px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+        .card-manga {
+            overflow: hidden;
             width: 175px;
+            margin: 10px;
             a {
+                display: block;
                 text-decoration: none;
                 color: $fontPrimaryColor;
-            }
-            img {
-                width: 100%;
-                height: 240px;
-                border-radius: 8px;
-            }
-            p {
-                font-size: 1rem;
-                font-weight: 500;
-                margin-top: 4px;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 240px;
+                    border-radius: 8px;
+                }
+                p {
+                    padding: 10px 0px 10px 0px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    text-shadow: 5px 5px 14px black;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
             }
             &:hover {
                 transform: scale(1.2);
@@ -354,64 +362,65 @@ body {
 }
 
 .manga-section-news-updates {
-    width: 100vw;
-    margin-top: 40px;
+    margin-top: 20px;
     hr {
-        margin-inline: 50px;
+        width: 93vw;
+        margin: 0 auto;
     }
-    .container-news-updates {
+    .card-group-manga-section-news-updates {
+        margin-top: 10px;
         display: flex;
-        justify-content: space-between;
-        margin-inline: 60px;
-        .cards-news-updates {
+        flex-wrap: wrap;
+        justify-content: center;
+        .card-manga-news-updates {
             display: flex;
-            align-items: center;
             justify-content: center;
-            width: 410px;
-            height: 170px;
+            align-items: center;
+            overflow: hidden;
             background-color: #2A2936;
             border-radius: 4px;
-            margin-top: 15px;
+            padding: 10px;
+            width: 410px;
+            height: 170px;
+            margin: 10px;
             a {
-                max-height: 140px;
-            }
-            img {
-                border-radius: 4px;
+                display: block;
+                text-decoration: none;
+                color: $fontPrimaryColor;
                 width: 100px;
-                height: 140px;
-            }
-            .container-content-new-updates {
-                margin-left: 8px;
-                display: flex;
-                flex-direction: column;
-                .cards-news-updates-manga-title {
-                    font-size: 1rem;
-                    font-weight: 500;
-                    margin-bottom: 4px;
-                    max-width: 220px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    a {
-                        text-decoration: none;
-                        color: $fontPrimaryColor;
-                    }   
+                max-height: 140px;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 140px;
+                    border-radius: 4px;
                 }
+            }
+            .content-new-updates {
+                margin-left: 8px;
                 a {
-                    text-decoration: none;
-                    color: $fontPrimaryColor;
+                    width: 220px;
+                    .cards-news-updates-manga-title {
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                        text-shadow: 5px 5px 14px black;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
                     button {
                         background-color: transparent;
                         border: solid 1px white;
                         cursor: pointer;
-                        border-radius: 8px;
-                        color: white;
-                        padding: 2px 4px;
-                        margin-top: 4px;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        width: 220px;
+                        color: white;
+                        font-size: 0.9rem;
+                        border-radius: 8px;
+                        padding: 2px 4px;
+                        margin-top: 4px;
+                        width: 100%;
                         &:hover {
                             background-color: white;
                             color: #2A2936;
@@ -432,41 +441,6 @@ footer {
 */
 
 @media (max-width: 1024px) {
-    .card-group-manga-section {
-        .card-01, .card-02 {
-            display: none;
-        }
-    }
-    .manga-section-news-updates {
-        .container-news-updates {
-            .cards-news-updates {
-                width: 100%;
-                height: 300px;
-                a {
-                    max-height: 270px;
-                }
-                img {
-                    width: 160px;
-                    height: 240px;
-                }
-                .container-content-new-updates {
-                    .cards-news-updates-manga-title {
-                        font-size: 1.5rem;
-                    }
-                    a {
-                        button {
-                            height: 60px;
-                            width: 380px;
-                            font-size: 1.4rem;
-                        }
-                    }
-                }
-            }
-            .card-01, .card-02{
-                display: none;
-            }
-        }
-    }
     footer {
         .footer-links {
             width: 50%;
@@ -476,25 +450,10 @@ footer {
 
 @media (max-width: 840px) {
 
-    .nav-medium-small-screen {
-
+    .banner-medium-small-screen {
+        display: block;
     }
 
-    .card-group-manga-section {
-        .card-01, .card-02, .card-03 {
-            display: none;
-        }
-        .cards-manga {
-            height: 425px !important;
-            width: 220px !important;
-            img {
-                height: 320px !important;
-            }
-            p {
-                font-size: 1.1rem !important;
-            }
-        }
-    }
     .banner {
         display: none;
     }
