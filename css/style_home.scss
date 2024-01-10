@@ -16,14 +16,13 @@ body {
 
 .banner-medium-small-screen {
     display: none;
-    width: 100vw;
-    height: 560px;
+    height: 600px;
     position: relative;
     background: url('../img/image3.png') no-repeat;
     background-size: 100%;
     background-position: top;
     overflow: hidden;
-    
+    object-fit: cover;
     .nav-medium-small-screen {
         z-index: 1;
         display: flex;
@@ -48,40 +47,58 @@ body {
             }
         }
     }
-
-    .text-topic {
+    .fa-circle-left, .fa-circle-right{
         z-index: 1;
         position: absolute;
-        margin-top: 16px;
-        margin-inline: 1.5rem;
-        font-size: 1.5rem;
-        font-weight: 500;
-        text-shadow: 5px 5px 14px black;
+        font-size: 2.1rem;
+        cursor: pointer;
+        color: #F5F5F5;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.5;
+        &:hover {
+            opacity: 1;
+        }
     }
-    .text-title {
-        z-index: 1;
-        position: absolute;
-        margin-top: 64px;
-        left: 0;
-        right: 0;
-        margin-inline: 1.1rem;
-        font-size: 1.7rem;
-        font-weight: 500;
-        text-shadow: 5px 5px 14px black;
-        text-align: center;
+    .fa-circle-left {
+        left: 1.5rem;
+    }
+    .fa-circle-right {
+        right: 1.5rem;
     }
 
-    .container-banner-manga-medium-small-screen {
+    .content-banner-medium-small-screen {
         z-index: 1;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+        width: 90%;
+        height: 80%;
+        margin: 10px;
         position: absolute;
-        width: 100vw;
-        margin-top: 120px;
         display: flex;
-        justify-content: center;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
 
+        .text-topic {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+            text-shadow: 5px 5px 14px black;
+        }
+        .text-title {            
+            margin-top: 1rem;
+            font-size: 1.7rem;
+            font-weight: 500;
+            width: 100%;
+            text-shadow: 5px 5px 14px black;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        } 
         .container-banner-manga-img {
+            margin-top: 1rem;
             width: 215px;
             height: 310px;
             img {
@@ -89,21 +106,18 @@ body {
                 height: 100%;
                 border-radius: 8px;
             }
-        }
-
-        .tags {
-            margin-top: 6px;
-            
-            button {
-                font-size: 0.8rem;
-                color: #F5F5F5;
-                background-color: #2A2936;
-                border-radius: 6px;
-                padding: 2px 6px;
-                border: none;
-                &:hover{
-                    background-color: #F5F5F5;
-                    color: #2A2936;
+            .tags {
+                button {
+                    font-size: 0.8rem;
+                    color: #F5F5F5;
+                    background-color: #2A2936;
+                    border-radius: 6px;
+                    padding: 2px 6px;
+                    border: none;
+                    &:hover{
+                        background-color: #F5F5F5;
+                        color: #2A2936;
+                    }
                 }
             }
         }
@@ -214,17 +228,23 @@ body {
         font-size: 2rem;
         font-weight: 500;
         text-shadow: 5px 5px 14px black;
+        
     }
     .text-title {
         margin-top: 16px;
         font-size: 2.2rem;
         text-shadow: 5px 5px 14px black;
+       
     }
     .text-description {
         margin-top: 8px;
         font-size: 0.9rem;
         font-weight: 300;
         text-shadow: 5px 5px 14px black;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 }
 
@@ -434,21 +454,23 @@ body {
 
 footer {
    @include mainFooter();
+   .footer-links {
+        width: 80%;
+        justify-content: center;
+        a {
+            margin-inline: 4px;
+        }
+   }
+   .footer-main-text {
+        width: 80%;
+    }
 }
 
 /*
     MEDIA QUERIES
 */
 
-@media (max-width: 1024px) {
-    footer {
-        .footer-links {
-            width: 50%;
-        }
-    }
-}
-
-@media (max-width: 840px) {
+@media (max-width: 758px) {
 
     .banner-medium-small-screen {
         display: block;
@@ -460,5 +482,16 @@ footer {
 
     .bar-with-logo {
         display: none;
+    }
+}
+
+@media (max-width: 485px) {
+    .footer-links {
+        a {
+            font-size: 0.8rem !important;
+        }
+   }
+   .footer-main-text {
+        font-size: 0.6rem !important;
     }
 }
