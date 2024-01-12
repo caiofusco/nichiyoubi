@@ -18,10 +18,7 @@ body {
   grid-area: left;
 }
 .left nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
+  margin-left: 5.5rem;
   margin-top: 32px;
 }
 .left nav div {
@@ -32,16 +29,6 @@ body {
 }
 .left nav div p {
   margin-left: 8px;
-}
-.left nav ul {
-  display: flex;
-  align-items: center;
-  width: 256px;
-  justify-content: space-around;
-}
-.left nav ul li {
-  list-style: none;
-  font-size: 1.2rem;
 }
 .left .container-primary-content {
   display: flex;

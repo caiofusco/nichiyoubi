@@ -12,10 +12,9 @@
 
 nav {
     display: flex;
+    justify-content: space-between;
+    margin-inline: 5.5rem;
     margin-top: 32px;
-    padding-left: 91px;
-    padding-right: 16px;
-    width: 100vw;
     div {
         display: flex;
         align-items: center;
@@ -25,23 +24,9 @@ nav {
             margin-left: 8px;
         }
     }
-    ul {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        li {
-            padding-left: 36px;
-            list-style: none;
-            font-size: 1.2rem;
-            a {
-                text-decoration: none;
-            }
-        }
-    }
+    
     .container-buttons-login-register {
         align-items: center;
-        margin-right: 194px;
         a {
             #btn-entrar {
                 @include primaryButton(#F5F5F5, $bgGrayColor, 8px);

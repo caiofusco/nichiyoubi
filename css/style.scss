@@ -20,10 +20,7 @@ body {
 .left {
     grid-area: left;
     nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
+        margin-left: 5.5rem;
         margin-top: 32px;
         div {
             display: flex;
@@ -32,16 +29,6 @@ body {
             font-weight: 600;
             p{
                 margin-left: 8px;
-            }
-        }
-        ul {
-            display: flex;
-            align-items: center;
-            width: 256px;
-            justify-content: space-around;
-            li {
-                list-style: none;
-                font-size: 1.2rem;
             }
         }
     }
