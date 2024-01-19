@@ -227,6 +227,10 @@ body {
   font-weight: 500;
   margin-left: 0px;
 }
+.container-actual-manga-especific-info-and-chapters .manga-chapters-section .container-first-and-last-chapter button:hover {
+  background-color: #F5F5F5;
+  color: #2A2936;
+}
 .container-actual-manga-especific-info-and-chapters .manga-chapters-section .container-manga-chapters {
   display: flex;
   flex-wrap: wrap;
@@ -254,6 +258,10 @@ body {
 .container-actual-manga-especific-info-and-chapters .manga-chapters-section .container-manga-chapters .manga-chapter button p:nth-child(2) {
   font-size: 0.7rem;
   font-weight: 300;
+}
+.container-actual-manga-especific-info-and-chapters .manga-chapters-section .container-manga-chapters .manga-chapter button:hover {
+  background-color: #F5F5F5;
+  color: #2A2936;
 }
 
 .title-manga-section {
@@ -379,4 +387,21 @@ footer .footer-main-text {
   .footer-main-text {
     font-size: 0.6rem !important;
   }
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #565869;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #565869 transparent;
 }/*# sourceMappingURL=style_manga-info.css.map */

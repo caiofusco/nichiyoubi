@@ -12,6 +12,7 @@ body {
     background-color: $bgPrimaryColor;
     color: $fontPrimaryColor;
     overflow-x: hidden;
+
 }
 
 .banner {
@@ -228,6 +229,10 @@ body {
                     font-weight: 500;
                     margin-left: 0px;
                 }
+                &:hover{
+                    background-color: #F5F5F5;
+                    color: #2A2936;
+                }
             }
         }
         .container-manga-chapters {
@@ -254,6 +259,10 @@ body {
                     p:nth-child(2) {
                         font-size: 0.7rem;
                         font-weight: 300;
+                    }
+                    &:hover{
+                        background-color: #F5F5F5;
+                        color: #2A2936;
                     }
                 }
             }
@@ -355,3 +364,22 @@ footer {
          font-size: 0.6rem !important;
      }
  }
+
+ 
+::-webkit-scrollbar {
+    width: 8px; 
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #565869;
+    border-radius: 4px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+  
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #565869 transparent;
+}
