@@ -15,9 +15,9 @@ body {
   width: 100vw;
   height: 50vh;
   position: relative;
-  background: url("../img/image3.png") no-repeat;
+  background: url("../img/banner-cover.png") no-repeat;
   background-size: 100%;
-  background-position: top;
+  background-position: center;
   overflow: hidden;
 }
 .banner nav {
